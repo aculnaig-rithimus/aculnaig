@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio van gedichten en fotografie">
+    <title>Portfolio - Gedichten & Fotografie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#poetry">Gedichten</a></li>
+            <li><a href="#photos">Fotografie</a></li>
+            <li><a href="#about">Over</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Jouw Naam</h1>
+        <p>Dichter & Fotograaf</p>
+    </section>
+
+    <!-- Poetry Section -->
+    <section id="poetry">
+        <h2 class="section-title">Gedichten</h2>
+        <div class="poetry-grid">
+            <article class="poem">
+                <h3>Titel van je gedicht</h3>
+                <div class="poem-content">
+Eerste regel van je gedicht
+Tweede regel, met ritme en klank
+Derde regel die verder gaat
+
+Tweede couplet begint hier
+Met woorden die bewegen
+En stiltes die spreken
+                </div>
+                <p class="poem-date">Geschreven in 2024</p>
+            </article>
+
+            <article class="poem">
+                <h3>Nog een gedicht</h3>
+                <div class="poem-content">
+Woorden vinden hun weg
+Door de stilte van de dag
+Gedachten op papier
+
+Elk vers een ademhaling
+Elke regel een stap
+Richting wat onzegbaar is
+                </div>
+                <p class="poem-date">Geschreven in 2024</p>
+            </article>
+
+            <article class="poem">
+                <h3>Derde gedicht</h3>
+                <div class="poem-content">
+Licht valt door het raam
+Schaduwen vertellen verhalen
+Die alleen de stilte kent
+
+In de ruimte tussen woorden
+Vindt de betekenis haar thuis
+                </div>
+                <p class="poem-date">Geschreven in 2025</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="photos">
+        <h2 class="section-title">Fotografie</h2>
+        <div class="photo-grid">
+            <div class="photo-item" onclick="openLightbox(this)">
+                <img src="images/photos/photo1.jpg" alt="Landschap" loading="lazy">
+                <div class="photo-caption">Berglandschap bij zonsondergang</div>
+            </div>
+            <div class="photo-item" onclick="openLightbox(this)">
+                <img src="images/photos/photo2.jpg" alt="Natuur" loading="lazy">
+                <div class="photo-caption">Bos in de ochtend</div>
+            </div>
+            <div class="photo-item" onclick="openLightbox(this)">
+                <img src="images/photos/photo3.jpg" alt="Meer" loading="lazy">
+                <div class="photo-caption">Reflecties op het water</div>
+            </div>
+            <div class="photo-item" onclick="openLightbox(this)">
+                <img src="images/photos/photo4.jpg" alt="Kust" loading="lazy">
+                <div class="photo-caption">Kustlijn bij eb</div>
+            </div>
+            <div class="photo-item" onclick="openLightbox(this)">
+                <img src="images/photos/photo5.jpg" alt="Natuur detail" loading="lazy">
+                <div class="photo-caption">Details in de natuur</div>
+            </div>
+            <div class="photo-item" onclick="openLightbox(this)">
+                <img src="images/photos/photo6.jpg" alt="Bomen" loading="lazy">
+                <div class="photo-caption">Tussen de bomen</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">Over Mij</h2>
+        <div class="about-content">
+            <p>Hier komt je introductie. Vertel over je passie voor poëzie en fotografie. Wat inspireert je? Hoe ben je begonnen? Wat wil je met je werk bereiken?</p>
+            <p style="margin-top: 2rem;">Vervang deze tekst met je eigen verhaal en maak het persoonlijk.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+            <p>Email: <a href="mailto:jouw@email.nl">jouw@email.nl</a></p>
+            <p style="margin-top: 1rem;">Instagram: <a href="https://instagram.com/jouwaccount" target="_blank" rel="noopener">@jouwaccount</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jouw Naam. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
